@@ -26,13 +26,13 @@ export default function Todo() {
         setErrMsg('');
       }, [1500]);
     }
-    if (textArea.length > 10) {
-      setErrMsg('Длина Todo должна быть меньше 10');
+    if (textArea.length >= 10) {
+      setErrMsg('Длина Todo должна быть 10 или меньше символов');
       setTimeout(() => {
         setErrMsg('');
       }, [1500]);
     }
-    if (textArea && textArea.length < 10) {
+    if (textArea && textArea.length <= 10) {
       const newTodo = {
         id: Date.now(),
         title: todo,
