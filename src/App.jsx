@@ -1,11 +1,10 @@
-/* eslint-disable react/react-in-jsx-scope */
 import './App.css';
+import Todo from './components/Todo/Todo';
 
 function App() {
   return (
-    // eslint-disable-next-line react/jsx-filename-extension
     <div className="App">
-      Hello!
+      <Todo />
     </div>
   );
 }
